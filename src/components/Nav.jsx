@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { CiMenuFries } from "react-icons/ci";
+import { FaTimes } from "react-icons/fa";
 import {Link} from "react-scroll";
 
 const Nav = () => {
   const [click,setClick] = useState(false);
+  const handleClick = () => setClick(!click)
   const content = 
   <>
     <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
@@ -37,8 +40,8 @@ const Nav = () => {
         <div>
           {click && content}
         </div>
-        <button>
-          {}
+        <button className="block sm:hidden transition" onClick={handleClick}>
+          {click ? <FaTimes /> : <CiMenuFries/>}
         </button>
 
       </div>
