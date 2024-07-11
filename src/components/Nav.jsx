@@ -6,11 +6,11 @@ const Nav = () => {
   <>
     <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
       <ul className="text-center text-xl p-20">
-        <Link to="Home"><li>Home</li></Link>
-        <Link to="About"><li>About</li></Link>
-        <Link to="Services"><li>Services</li></Link>
-        <Link to="Projects"><li>Projects</li></Link>
-        <Link to="Contact"><li>Contact</li></Link>
+        <Link to="Home"><li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Home</li></Link>
+        <Link to="About"><li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">About</li></Link>
+        <Link to="Services"><li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Services</li></Link>
+        <Link to="Projects"><li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Projects</li></Link>
+        <Link to="Contact"><li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Contact</li></Link>
       </ul>
     </div>
   </>
