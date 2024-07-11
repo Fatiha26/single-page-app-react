@@ -1,7 +1,8 @@
+import { useState } from "react";
 import {Link} from "react-scroll";
 
 const Nav = () => {
-
+  const [click,setClick] = useState(false);
   const content = 
   <>
     <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
@@ -32,8 +33,15 @@ const Nav = () => {
         </ul>
           </div>
         </div>
-      </div>
 
+        <div>
+          {click && content}
+        </div>
+        <button>
+          {}
+        </button>
+
+      </div>
     </nav>
   )
 }
